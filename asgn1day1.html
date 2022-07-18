@@ -1,6 +1,96 @@
 <!DOCTYPE html>
 <html>
     <head>
+<style>
+    body{
+        background: linear-gradient(rgb(208, 208, 236),aliceblue,rgb(157, 188, 194));
+        min-width: 415px;
 
+    }
+    .btn{
+        width:200px;
+        height:50px;
+        color:rgb(61, 61, 102);
+        background-color: rgb(192, 234, 227);
+        font-size: large;
+    }
+    .btn:hover{
+        background-color: rgb(81, 140, 140);
+        color:white;
+        font-size: larger;
+    }
+    #etable ,td, tr{
+        border-radius: 3px;
+        border:1px solid lightslategray;
+        border-collapse: collapse;
+        max-width: 300px;
+        min-width: 200px;
+        text-align: center;
+        padding: 5px;
+    }
+    #mindtree{
+        max-width: 150px;
+        display: inline;
+    }
+ .p
+{
+    width:300px;
+}
+fieldset{
+    width: 415px;
+}
+input{
+    padding:5px;
+}
+  
+</style>
     </head>
+    <body>
+        <table id="etable">
+            <tr>
+                <td>Employee ID</td>
+                <td>Employee name</td>
+                <td>Employee city</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Roshan</td>
+                <td>Delhi</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Roshni</td>
+                <td>Bangalore</td>
+            </tr>
+        </table>
+    <h3>Types of employees</h3>
+        <h4>Top employee</h4><p>Person who performs excellent is Top Employee,</p><br>
+        <h4>Average employee</h4><p>Person who just meets the expectation is Average Employee</p><br>
+        <h4>Poor employee</h4><p>Person who doesn't oerforms is Poor employee</p>
+        <a id="mt" href="https://mindtree.com" alt="Go to mindtree"><img id="mindtree" src="https://assets.thehansindia.com/h-upload/feeds/2019/03/21/1600x960_145376-mindtree.jpg" /></a><br><caption class="p">Mindtree Ltd </caption>
+   <form action="">
+    <fieldset>
+<label>First Name<input type="text" name="name" id="firstname"></label><br>
+<label>Last Name<input type="text" name="name" id="lastname"></label>
+<hr>
+<select><p>What are your skills? Select below</p><br>
+    <option value="null" >select</option>
+    <option value="skills">VueJS</option>
+    <option value="skills">AngularJS</option>
+    <option value="skills">ReactJS</option>
+</select>
+<p class="p">Preferred Location<br><caption>(Choose one or more:)</caption></p>
+<label for="bombay" ><input class="l"id="bombay" type="checkbox">Delhi</label><br>
+<label for="Delhi" ><input class="l" id="Delhi" type="checkbox">Delhi</label><br>
+<label for="Kolkata" ><input class="l" id="Kolkata" type="checkbox">Kolkata</label><br>
+<label for="chennai" ><input class="l" id="chennai" type="checkbox">Chennai</label><br>
+
+    </fieldset>
+    <button class="btn">Submit</button>
+   </form>
+   
+   
+   
+    </body>
+
 </html>
